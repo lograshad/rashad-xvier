@@ -1,0 +1,163 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+
+.content-container {
+display: flex;
+flex-direction: column;
+}
+
+.welcome-text {
+max-width: 50vw;
+text-align: center;
+font-size: 1.2rem;
+border-bottom: 2px solid rgb(44, 42, 42);
+padding-bottom: .5em;
+align-self: center;
+}
+
+.imgs-container{
+display: flex;
+margin-top: 1.5rem;
+justify-content: space-between;
+}
+
+.img{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.img h3{
+font-size: 2em;
+margin-top: -.05em;
+}
+
+.img-text {
+margin-top: -1.5em;
+font-size: 1.2em;
+color: rgb(248, 175, 149);
+border-bottom: 1px solid #2e2a2a;
+}
+
+.npm-container{
+display: flex;
+align-items: center;
+}
+
+.npm-wrapper{
+background: url("cli.png");
+background-size: cover;
+height: 150px;
+width: 100%;
+background-position: center;
+}
+
+.npm {
+margin: 0rem 0rem 5.5rem;
+box-shadow: 3px 3px 3px hsl(0, 5%, 17%, 50%);
+border-radius: 1em;
+padding: 1em 1em;
+font-size: 1.1em;
+font-weight: 400;
+}
+
+.hosting-container {
+background-color: #2e2a2a;
+}
+
+.hosting-container2 {
+display: flex;
+justify-content: space-between;
+padding: 2rem 5.5rem 2rem;
+}
+
+.host-texts{
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h4{
+font-size: 2em;
+font-weight: 400;
+text-align: center;
+}
+
+h5{
+font-size: 1.1em;
+font-weight: 400;
+margin-top: -2em;
+text-align: center;
+}
+
+.host-btn{
+background: rgb(248, 175, 149, 50%);
+border: none;
+font-size: 1.2em;
+color: white;
+padding: 1em;
+border-radius: .5em;
+cursor: pointer;
+}
+
+.host-btn:hover {
+transform: scale(0.98);
+}
+
+
+.cloud-img{
+width:40vw;
+}
+
+h6{
+font-size: 1.6em;
+text-align: center;
+font-weight: 400;
+}
+
+.prog-container{
+display: flex;
+margin-top: -5em;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+
+
+.prog-wrapper {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 1rem 2rem;
+box-shadow: 4px 4px 4px hsl(0, 5%, 17%, 50%);
+border-radius: .7rem;
+padding: 1em;
+transition: transform 300ms ease-in-out;
+}
+
+.prog-wrapper:hover {
+transform: translateY(-20%);
+}
+
+@keyframes header-load {
+0% {
+    transform: translateX(-100%);
+}
+
+100% {
+    transform: translateX(0%);
+}
+}
+
+@keyframes header2-load {
+0% {
+    transform: translateX(100%);
+}
+
+100% {
+    transform: translateX(0%);
+}
+}
